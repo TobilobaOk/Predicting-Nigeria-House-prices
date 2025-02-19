@@ -3,6 +3,7 @@ import pickle
 import streamlit as st
 import numpy as np
 import pandas as pd
+import category_encoders
 
 # Load your model file
 with open('model.pkl', 'rb') as f:
