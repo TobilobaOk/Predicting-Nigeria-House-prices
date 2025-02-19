@@ -12,7 +12,7 @@ with open('model.pkl', 'rb') as f:
 st.title('Nigeria House Price Predictor App')
 
 # Add input widgets for user inputs
-house_type = st.selectbox(
+title = st.selectbox(
     "title",
     ['Detached Duplex', 'Terraced Duplexes', 'Semi Detached Duplex',
        'Detached Bungalow', 'Block of Flats', 'Semi Detached Bungalow',
@@ -25,7 +25,7 @@ parking_space = st.slider("parking_space", min_value=1, max_value=9, value=2)
 if st.button("Predict"):
     # Prepare the input data as a DataFrame (since pipelines often expect a DataFrame)
     input_data = pd.DataFrame({
-        'title': [house_type],
+        'title': [title],
         'bedrooms': [bedrooms],
         'parking_space': [parking_space]
     })
