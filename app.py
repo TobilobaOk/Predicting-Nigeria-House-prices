@@ -25,9 +25,9 @@ parking_space = st.slider("parking_space", min_value=1, max_value=9, value=2)
 if st.button("Predict"):
     # Prepare the input data as a DataFrame (since pipelines often expect a DataFrame)
     input_data = pd.DataFrame({
-        'House_type': [house_type],
-        'Bedrooms': [bedrooms],
-        'Parking_space': [parking_space]
+        'title': [house_type],
+        'bedrooms': [bedrooms],
+        'parking_space': [parking_space]
     })
     prediction = model .predict(input_data)[0].round(2)
     st.write(f'The predicted value is: {prediction} Naira')
