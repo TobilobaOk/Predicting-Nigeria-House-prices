@@ -31,4 +31,4 @@ if st.button("Predict"):
         'title': [title]
     })
     prediction = model.predict(input_data)[0].round(2)
-    st.write(f'The predicted value is: {prediction} Naira')
+    st.write(f'The predicted apartment price is: {prediction} Naira')
