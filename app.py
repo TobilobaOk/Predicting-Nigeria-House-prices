@@ -29,5 +29,5 @@ if st.button("Predict"):
         'Bedrooms': [bedrooms],
         'Parking_space': [parking_space]
     })
-    prediction = model.predict(input_data)[0].round(2)
+    prediction = model .predict(input_data)[0].round(2)
     st.write(f'The predicted value is: {prediction} Naira')
