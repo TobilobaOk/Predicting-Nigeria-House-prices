@@ -12,15 +12,16 @@ with open('model.pkl', 'rb') as f:
 st.title('Nigeria House Price Predictor App')
 
 # Add input widgets for user inputs
-
-bedrooms = st.slider("bedrooms", min_value=1, max_value=9, value=3)
-parking_space = st.slider("parking_space", min_value=1, max_value=9, value=2)
 title = st.selectbox(
     "title",
     ['Detached Duplex', 'Terraced Duplexes', 'Semi Detached Duplex',
        'Detached Bungalow', 'Block of Flats', 'Semi Detached Bungalow',
        'Terraced Bungalow']
-)
+
+
+bedrooms = st.slider("bedrooms", min_value=1, max_value=9, value=3)
+parking_space = st.slider("parking_space", min_value=1, max_value=9, value=2)
+
 
 # When the 'Predict' button is clicked
 if st.button("Predict"):
