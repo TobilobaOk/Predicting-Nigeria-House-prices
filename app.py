@@ -26,8 +26,8 @@ if st.button("Predict"):
     # Prepare the input data as a DataFrame (since pipelines often expect a DataFrame)
     input_data = pd.DataFrame({
         'title': [title],
-        'Bedrooms': [bedrooms],
-        'Parking_space': [parking_space]
+        'bedrooms': [bedrooms],
+        'parking_space': [parking_space]
     })
     prediction = model.predict(input_data)[0].round(2)
     st.write(f'The predicted value is: {prediction} Naira')
