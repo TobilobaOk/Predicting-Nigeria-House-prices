@@ -21,7 +21,7 @@ This dataset contains Houses listings in Nigeria and their prices based on Locat
 
 # Model Training
 
-**Import Statements and Dataset**
+**Import Statements and Dataset**<br>
 To begin with, the necessary libraries and modules are imported, and the dataset is loaded into the model.<br>
 import pandas as pd<br>
 import seaborn as sns<br>
