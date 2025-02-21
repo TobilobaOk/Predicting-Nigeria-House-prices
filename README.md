@@ -105,4 +105,11 @@ interact(
 # Conclusion
 The test MAE of 62,422,800 indicates that the model’s predictions are closer to the actual values than the baseline model (77,032,009),demonstrating that this model can be effectively used to predict house prices in Nigeria.
 
-However, further improvements can be made by:
+However, further improvements could be made by:
+1.	Incorporate Additional Features – Including economic indicators (e.g., inflation rate, exchange rate) and location-specific attributes could enhance prediction accuracy
+2.	Regular Model Updates – The real estate market changes over time, so periodic retraining of the model with updated data will improve accuracy
+
+
+# Future Work
+•	Expanding the feature set to include more economic indicators.<br>
+•	Exploring Other Regression Models may yield better predictive performance.
