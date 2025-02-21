@@ -3,7 +3,7 @@
 This documentation outlines the development and evaluation of a Ridge regression model to predict Nigeria house prices using real-life data. The model is evaluated using Mean Absolute Error (MAE) as the primary performance metric.
 
 
-#Problem Statements:
+# Problem Statements:
 
 •	The goal is to create a model that can predict house prices in Nigeria using machine learning (Ridge_Regression_Model)
 •	Real estate agents, buyers, and investors needs have access to market-driven pricing that can assist them in making informed decisions.
